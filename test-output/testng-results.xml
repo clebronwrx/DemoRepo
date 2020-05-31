@@ -1,37 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="7" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-21T12:50:43 EDT" name="Default suite" finished-at="2020-05-21T12:50:57 EDT" duration-ms="13756">
+  <suite started-at="2020-05-31T16:45:31 EDT" name="Chase Banking Regression Suite " finished-at="2020-05-31T16:46:01 EDT" duration-ms="30533">
     <groups>
+      <group name="search">
+        <method signature="HomePageTest.verifySearchTest()[pri:4, instance:com.qa.tests.HomePageTest@343570b7]" name="verifySearchTest" class="com.qa.tests.HomePageTest"/>
+      </group> <!-- search -->
+      <group name="atm">
+        <method signature="AtmBranchPageTest.validateSearchForAtmNearYou()[pri:0, instance:com.qa.tests.AtmBranchPageTest@157853da]" name="validateSearchForAtmNearYou" class="com.qa.tests.AtmBranchPageTest"/>
+        <method signature="AtmBranchPageTest.verifyAtmBranchPageTitleTest()[pri:0, instance:com.qa.tests.AtmBranchPageTest@157853da]" name="verifyAtmBranchPageTitleTest" class="com.qa.tests.AtmBranchPageTest"/>
+        <method signature="HomePageTest.validateAtmBranchTabTest()[pri:3, instance:com.qa.tests.HomePageTest@343570b7]" name="validateAtmBranchTabTest" class="com.qa.tests.HomePageTest"/>
+      </group> <!-- atm -->
+      <group name="homepage">
+        <method signature="HomePageTest.validateAtmBranchTabTest()[pri:3, instance:com.qa.tests.HomePageTest@343570b7]" name="validateAtmBranchTabTest" class="com.qa.tests.HomePageTest"/>
+        <method signature="HomePageTest.validateHomePageTitleTest()[pri:2, instance:com.qa.tests.HomePageTest@343570b7]" name="validateHomePageTitleTest" class="com.qa.tests.HomePageTest"/>
+        <method signature="HomePageTest.verifyHomePageLogoTest()[pri:1, instance:com.qa.tests.HomePageTest@343570b7]" name="verifyHomePageLogoTest" class="com.qa.tests.HomePageTest"/>
+        <method signature="HomePageTest.verifySearchTest()[pri:4, instance:com.qa.tests.HomePageTest@343570b7]" name="verifySearchTest" class="com.qa.tests.HomePageTest"/>
+      </group> <!-- homepage -->
     </groups>
-    <test started-at="2020-05-21T12:50:43 EDT" name="Default test" finished-at="2020-05-21T12:50:57 EDT" duration-ms="13756">
-      <class name="com.qa.tests.AtmBranchPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.AtmBranchPageTest@7c1e2a9e]" started-at="2020-05-21T12:50:43 EDT" name="setup" finished-at="2020-05-21T12:50:49 EDT" duration-ms="5894" status="PASS">
+    <test started-at="2020-05-31T16:45:31 EDT" name="Chase HomePage Test chrome " finished-at="2020-05-31T16:46:01 EDT" duration-ms="30533">
+      <class name="com.qa.tests.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:31 EDT" name="setup" finished-at="2020-05-31T16:45:35 EDT" duration-ms="4505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateSearchForAtmNearYou()[pri:0, instance:com.qa.tests.AtmBranchPageTest@7c1e2a9e]" started-at="2020-05-21T12:50:49 EDT" name="validateSearchForAtmNearYou" finished-at="2020-05-21T12:50:51 EDT" duration-ms="2399" status="PASS">
+        <test-method signature="verifyHomePageLogoTest()[pri:1, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:35 EDT" name="verifyHomePageLogoTest" finished-at="2020-05-31T16:45:35 EDT" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSearchForAtmNearYou -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.tests.AtmBranchPageTest@7c1e2a9e]" started-at="2020-05-21T12:50:51 EDT" name="teardown" finished-at="2020-05-21T12:50:51 EDT" duration-ms="99" status="PASS">
+        </test-method> <!-- verifyHomePageLogoTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:35 EDT" name="teardown" finished-at="2020-05-31T16:45:35 EDT" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.AtmBranchPageTest@7c1e2a9e]" started-at="2020-05-21T12:50:51 EDT" name="setup" finished-at="2020-05-21T12:50:56 EDT" duration-ms="5246" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:35 EDT" name="setup" finished-at="2020-05-31T16:45:39 EDT" duration-ms="3425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAtmBranchPageTitleTest()[pri:0, instance:com.qa.tests.AtmBranchPageTest@7c1e2a9e]" started-at="2020-05-21T12:50:56 EDT" name="verifyAtmBranchPageTitleTest" finished-at="2020-05-21T12:50:56 EDT" duration-ms="5" status="PASS">
+        <test-method signature="validateHomePageTitleTest()[pri:2, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:39 EDT" name="validateHomePageTitleTest" finished-at="2020-05-31T16:45:39 EDT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomePageTitleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:39 EDT" name="teardown" finished-at="2020-05-31T16:45:39 EDT" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:39 EDT" name="setup" finished-at="2020-05-31T16:45:42 EDT" duration-ms="3451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateAtmBranchTabTest()[pri:3, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:42 EDT" name="validateAtmBranchTabTest" finished-at="2020-05-31T16:45:44 EDT" duration-ms="1600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAtmBranchTabTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:44 EDT" name="teardown" finished-at="2020-05-31T16:45:44 EDT" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:44 EDT" name="setup" finished-at="2020-05-31T16:45:47 EDT" duration-ms="3557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchTest()[pri:4, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:47 EDT" name="verifySearchTest" finished-at="2020-05-31T16:45:49 EDT" duration-ms="1126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.tests.HomePageTest@343570b7]" started-at="2020-05-31T16:45:49 EDT" name="teardown" finished-at="2020-05-31T16:45:49 EDT" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.tests.HomePageTest -->
+      <class name="com.qa.tests.AtmBranchPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.AtmBranchPageTest@157853da]" started-at="2020-05-31T16:45:49 EDT" name="setup" finished-at="2020-05-31T16:45:53 EDT" duration-ms="4783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateSearchForAtmNearYou()[pri:0, instance:com.qa.tests.AtmBranchPageTest@157853da]" started-at="2020-05-31T16:45:53 EDT" name="validateSearchForAtmNearYou" finished-at="2020-05-31T16:45:56 EDT" duration-ms="2494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchForAtmNearYou -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.tests.AtmBranchPageTest@157853da]" started-at="2020-05-31T16:45:56 EDT" name="teardown" finished-at="2020-05-31T16:45:56 EDT" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.AtmBranchPageTest@157853da]" started-at="2020-05-31T16:45:56 EDT" name="setup" finished-at="2020-05-31T16:46:01 EDT" duration-ms="4924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAtmBranchPageTitleTest()[pri:0, instance:com.qa.tests.AtmBranchPageTest@157853da]" started-at="2020-05-31T16:46:01 EDT" name="verifyAtmBranchPageTitleTest" finished-at="2020-05-31T16:46:01 EDT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAtmBranchPageTitleTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.tests.AtmBranchPageTest@7c1e2a9e]" started-at="2020-05-21T12:50:56 EDT" name="teardown" finished-at="2020-05-21T12:50:57 EDT" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.tests.AtmBranchPageTest@157853da]" started-at="2020-05-31T16:46:01 EDT" name="teardown" finished-at="2020-05-31T16:46:01 EDT" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.qa.tests.AtmBranchPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Chase HomePage Test chrome  -->
+  </suite> <!-- Chase Banking Regression Suite  -->
 </testng-results>

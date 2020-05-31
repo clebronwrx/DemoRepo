@@ -36,14 +36,14 @@ public class HomePageTest extends BaseTest {
 
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true, groups = "homepage")
 	public void verifyHomePageLogoTest() {
 		boolean logo = homepage.visibilityOfHomePageLogo();
 		softassert.assertTrue(logo);
 		softassert.assertAll();
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true, groups = "homepage")
 	public void validateHomePageTitleTest() {
 		String title = driver.getTitle();
 		System.out.println("Home page title is : " + title);
@@ -51,7 +51,7 @@ public class HomePageTest extends BaseTest {
 				"Title does not match expected result");
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true, groups = {"atm","homepage"})
 	public void validateAtmBranchTabTest() {
 		atmbranchpage = homepage.clickATMandBranch();
 		String AtmBranchTitle = driver.getTitle();
@@ -60,7 +60,7 @@ public class HomePageTest extends BaseTest {
 				"Title does not match expected result");
 	}
 
-	@Test(priority = 4, enabled = true)
+	@Test(priority = 4, enabled = true, groups = {"homepage","search"})
 	public void verifySearchTest() {
 		searchpage = homepage.doSearch("cash");
 		String SearchTitle = driver.getTitle();

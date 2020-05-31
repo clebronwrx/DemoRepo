@@ -34,13 +34,13 @@ public class AtmBranchPageTest extends BaseTest {
 		espanolpage = new EspanolPage();
 		atmbranchpage = homepage.clickATMandBranch();
 	}
-	@Test(enabled = true)
+	@Test(enabled = true , groups = "atm")
 	public void verifyAtmBranchPageTitleTest() {
 		String title = driver.getTitle();
 		System.out.println(title);
 		Assert.assertEquals(title, "Find a Chase ATM or branch near you | Chase Bank");
 	}
-	@Test(enabled = true)
+	@Test(enabled = true , groups = "atm")
 	public void validateSearchForAtmNearYou() {
 		atmbranchpage.searchForAtmNearYou("33028");
 		WebElement searchResult=  	driver.findElement(By.xpath("//span[@class='ResultSummary-query']"));

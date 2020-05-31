@@ -13,6 +13,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.qa.util.WebEventListener;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseTest {
 
 	public static WebDriver driver;
@@ -39,13 +41,11 @@ public class BaseTest {
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					"/Users/chrislebron/eclipse-workspace/POMMayBuild/drivers/chromedriver");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} 
 		else if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver",
-					"/Users/chrislebron/eclipse-workspace/POMMayBuild/drivers/geckodriver");
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 		e_driver = new EventFiringWebDriver(driver);

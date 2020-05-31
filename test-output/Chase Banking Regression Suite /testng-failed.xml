@@ -5,12 +5,25 @@
     <listener class-name="com.qa.ExtentReportListeners.ExtentReportListener"/>
   </listeners>
   <test thread-count="5" name="Chase HomePage Test chrome (failed)">
+    <groups>
+      <run>
+        <include name="atm"/>
+        <include name="homepage"/>
+      </run>
+    </groups>
     <classes>
+      <class name="com.qa.tests.AtmBranchPageTest">
+        <methods>
+          <include name="verifyAtmBranchPageTitleTest"/>
+          <include name="validateSearchForAtmNearYou"/>
+        </methods>
+      </class> <!-- com.qa.tests.AtmBranchPageTest -->
       <class name="com.qa.tests.HomePageTest">
         <methods>
+          <include name="validateAtmBranchTabTest"/>
+          <include name="verifySearchTest"/>
+          <include name="verifyHomePageLogoTest"/>
           <include name="validateHomePageTitleTest"/>
-          <include name="setup"/>
-          <include name="teardown"/>
         </methods>
       </class> <!-- com.qa.tests.HomePageTest -->
     </classes>

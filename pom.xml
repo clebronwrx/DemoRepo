@@ -29,7 +29,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.1.0</version>
-    <scope>test</scope>
+    <scope>compile</scope>
 </dependency> 
 <dependency>
 			<groupId>commons-io</groupId>
@@ -77,6 +77,13 @@
 			<artifactId>poi-excelant</artifactId>
 			<version>3.17</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>3.8.1</version>
+</dependency>
+		
  </dependencies>
 
   <build>
